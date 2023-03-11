@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5dc;
+}
+
+.cont {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 300%;
+    font-family: 'Tilt Neon';
+    margin: 20px 0 20px 8%;
+}
+
+h2 {
+    margin-left: 6%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Tilt Neon';
+    font-size: 150%;
+    color: #010172;
+    cursor: pointer;
+}
+
+.svg {
+    position: relative;
+    margin-top: -45px;
+    margin-right: 25px;
+    width: 35px;
+    height: 35px;
+    transform: rotate(45deg);
+    display: none;
+    transition: 2s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    margin: 0 auto 10px;
+    opacity: 0;
+    transition: 2s;
+    width: 0;
+    height: 0;
+}
+
+input {
+    display: none;
+}
+
+.cont:hover .svg {
+    display: block;
+}
+
+.cont:hover h2 {
+    color: #000;
+}
+
+.f-block:hover img.f[alt = 'img'] {
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+
+.s-block:hover img.s[alt = 'img'] {
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+
+.t-block:hover img.t[alt = 'img'] {
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+
+.four-block:hover img.four[alt = 'img'] {
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+
+.fif-block:hover img.fif[alt = 'img'] {
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+
+.f-block,
+.s-block,
+.t-block,
+.four-block,
+.fif-block {
+    cursor: pointer;
+}
+
+input#first:checked ~ label[for = 'first'] > .f-block > img.f[alt = 'img'] {
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+input#first:checked ~ label[for = 'first'] > .f-block > .svg.f {
+    transform: rotate(90deg);
+    width: 35px;
+    height: 35px;
+}
+input#first:checked ~ label[for = 'first'] > .f-block > h2.f {
+    color: #000;
+}
+
+input#second:checked ~ label[for = 'second'] > .s-block > img.s[alt = 'img'] {
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+input#second:checked ~ label[for = 'second'] > .s-block > .svg.s {
+    transform: rotate(90deg);
+    width: 35px;
+    height: 35px;
+}
+input#second:checked ~ label[for = 'second'] > .s-block > h2.s {
+    color: #000;
+}
+
+input#third:checked ~ label[for = 'third'] > .t-block > img.t[alt = 'img'] {
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+input#third:checked ~ label[for = 'third'] > .t-block > .svg.t {
+    transform: rotate(90deg);
+    width: 35px;
+    height: 35px;
+}
+input#third:checked ~ label[for = 'third'] > .t-block > h2.t {
+    color: #000;
+}
+
+input#fourth:checked ~ label[for = 'fourth'] > .four-block > img.four[alt = 'img'] {
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+input#fourth:checked ~ label[for = 'fourth'] > .four-block > .svg.four {
+    transform: rotate(90deg);
+    width: 35px;
+    height: 35px;
+}
+input#fourth:checked ~ label[for = 'fourth'] > .four-block > h2.four {
+    color: #000;
+}
+
+input#fifth:checked ~ label[for = 'fifth'] > .fif-block > img.fif[alt = 'img'] {
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+input#fifth:checked ~ label[for = 'fifth'] > .fif-block > .svg.fif {
+    transform: rotate(90deg);
+    width: 35px;
+    height: 35px;
+}
+input#fifth:checked ~ label[for = 'fifth'] > .fif-block > h2.fif {
+    color: #000;
+}
+
+@media (max-width: 820px) {
+    img {
+        width: 250px !important;
+    }
+    .cont:hover .svg {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    img {
+        width: 200px !important;
+    }
+}
