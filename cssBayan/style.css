@@ -172,3 +172,18 @@ input#fifth:checked ~ label[for = 'fifth'] > .fif-block > .svg.fif {
 input#fifth:checked ~ label[for = 'fifth'] > .fif-block > h2.fif {
     color: #000;
 }
+
+@media (max-width: 820px) {
+    img {
+        width: 250px !important;
+    }
+    .cont:hover .svg {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    img {
+        width: 200px !important;
+    }
+}
