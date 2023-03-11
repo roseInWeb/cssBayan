@@ -48,7 +48,7 @@ img {
     display: block;
     margin: 0 auto 10px;
     opacity: 0;
-    transition: 1s;
+    transition: 2s;
     width: 0;
     height: 0;
 }
@@ -65,7 +65,7 @@ input {
     color: #000;
 }
 
-/* .f-block:hover img.f[alt = 'img'] {
+.f-block:hover img.f[alt = 'img'] {
     opacity: 1;
     width: auto;
     height: auto;
@@ -90,10 +90,10 @@ input {
 }
 
 .fif-block:hover img.fif[alt = 'img'] {
-    visibility: visible;
+    opacity: 1;
     width: auto;
     height: auto;
-} */
+}
 
 .f-block,
 .s-block,
